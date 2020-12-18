@@ -47,6 +47,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+            if let url = URLContexts.first?.url {
+                print(url)
+                let urlStr = url.absoluteString //1
+                // Parse the custom URL as per your requirement.
 
+
+                }
+            }
 }
 
