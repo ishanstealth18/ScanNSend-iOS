@@ -10,7 +10,7 @@ import CoreBluetooth
 
 var blePeripheral1: CBPeripheral!
 var inputCommand: String!
-
+let bleReadServiceNameCBUUID = CBUUID(string: "0xFFE0")
 class BleFunction: NSObject {
 
     static let bleObj = BleFunction()
